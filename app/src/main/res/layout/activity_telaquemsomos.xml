@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent">
+    
+    
+<android.support.constraint.ConstraintLayout 
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Telaquemsomos">
+
+    <TextView
+        android:id="@+id/tituloSomos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Quem Somos"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textosomos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Let the king of my heart Be the mountain where I run The fountain I drink from He is my song  Let the king of my heart Be the shadow where I hide The ransom for my life He is my song  You are good, good, ô ô  Let the king of my heart Be the wind inside my sails The anchor in the waves He is my song  Let the king of my heart Be the fire inside my veins The echo of my days He is my song  You are good, good, ô ô  You're never gonna let Never gonna let me down"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloSomos" />
+
+    <ImageButton
+        android:id="@+id/voltar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@null"
+        android:onClick="irParaMenu"
+        android:scaleType="fitCenter"
+        android:tint="#CB9CA1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoVideo"
+        app:srcCompat="@drawable/ic_voltar" />
+
+    <ImageButton
+        android:id="@+id/contribuir"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@null"
+        android:onClick="siteContribuir"
+        android:scaleType="fitCenter"
+        android:tint="#CB9CA1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textosomos"
+        app:srcCompat="@drawable/ic_contribuir" />
+
+    <TextView
+        android:id="@+id/textoContribua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Contribua com o projeto"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/contribuir"
+        app:layout_constraintStart_toStartOf="@+id/contribuir"
+        app:layout_constraintTop_toBottomOf="@+id/contribuir" />
+
+    <ImageButton
+        android:id="@+id/video"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@null"
+        android:onClick="youtubeVideo"
+        android:scaleType="fitCenter"
+        android:tint="#CB9CA1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoContribua"
+        app:srcCompat="@drawable/ic_video" />
+
+    <TextView
+        android:id="@+id/textoVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Assista nosso vídeo"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/video"
+        app:layout_constraintStart_toStartOf="@+id/video"
+        app:layout_constraintTop_toBottomOf="@+id/video" />
+</android.support.constraint.ConstraintLayout>
+
+
+
+</ScrollView>

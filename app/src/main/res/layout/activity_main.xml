@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/perfil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:onClick="irParaPerfil"
+        android:scaleType="fitCenter"
+        android:tint="#CB9CA1"
+        app:layout_constraintBottom_toTopOf="@+id/enviar"
+        app:layout_constraintEnd_toStartOf="@+id/registro"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_perfil" />
+
+    <ImageButton
+        android:id="@+id/registro"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:onClick="irParaRegistro"
+        android:scaleType="fitCenter"
+        android:tint="#CB9CA1"
+        app:layout_constraintBottom_toTopOf="@+id/somos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/perfil"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_registro" />
+
+    <ImageButton
+        android:id="@+id/enviar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:onClick="irParaEnviar"
+        android:scaleType="fitCenter"
+        android:tint="#CB9CA1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/somos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perfil"
+        app:srcCompat="@drawable/ic_enviar_registros" />
+
+    <ImageButton
+        android:id="@+id/somos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:onClick="irParaSomos"
+        android:scaleType="fitCenter"
+        android:tint="#CB9CA1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/enviar"
+        app:layout_constraintTop_toBottomOf="@+id/registro"
+
+        app:srcCompat="@drawable/ic_somos" />
+
+    <TextView
+        android:id="@+id/textPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Perfil"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/perfil"
+        app:layout_constraintStart_toStartOf="@+id/perfil"
+        app:layout_constraintTop_toBottomOf="@+id/perfil" />
+
+    <TextView
+        android:id="@+id/textRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Adicionar Registro"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/registro"
+        app:layout_constraintStart_toStartOf="@+id/registro"
+        app:layout_constraintTop_toBottomOf="@+id/registro" />
+
+    <TextView
+        android:id="@+id/textEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Enviar Registros"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/enviar"
+        app:layout_constraintStart_toStartOf="@+id/enviar"
+        app:layout_constraintTop_toBottomOf="@+id/enviar" />
+
+    <TextView
+        android:id="@+id/textSomos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Quem Somos"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/somos"
+        app:layout_constraintStart_toStartOf="@+id/somos"
+        app:layout_constraintTop_toBottomOf="@+id/somos" />
+
+</android.support.constraint.ConstraintLayout>

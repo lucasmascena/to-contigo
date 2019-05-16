@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acticity.registro">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_anchorGravity="bottom|center_horizontal|center">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imgCoracao"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:scaleType="fitCenter"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/ic_heart_aid" />
+
+        <TextView
+            android:id="@+id/textRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="O que aconteceu hoje ?"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:fontFamily="@font/baloo" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_registro" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_done_black_24dp" />
+
+</android.support.design.widget.CoordinatorLayout>
